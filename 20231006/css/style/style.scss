@@ -1,0 +1,64 @@
+@import url(/20231006/css/reset/reset.css);
+
+.alert-box {
+  display: none;
+  position: relative;
+  background-color: skyblue;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.title {
+  display: inline-block;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.open-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #dedede;
+}
+
+.list-group {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+.loginBtn {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #dedede;
+}
+
+.black-bg {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+.white-bg {
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.show {
+  display: block;
+}
