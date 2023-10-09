@@ -24,6 +24,7 @@ const btnHandler = () => {
 
 document.querySelector(".navbar-toggler").addEventListener("click", btnHandler);
 
+// 팝업 모달창
 const logInHandler = () => {
   document.querySelector(".black-bg").classList.add("show");
 };
@@ -33,3 +34,33 @@ const closeBtnHandler = () => {
 
 document.querySelector(".loginBtn").addEventListener("click", logInHandler);
 document.querySelector(".closeBtn").addEventListener("click", closeBtnHandler);
+
+// 조건문
+// 전송버튼 누르면 저기 input 에 입력한 값이 공백이면 알림창 띄워주세요
+
+// if (true) {
+//   console.log("안녕");
+// } else {
+//   console.log("잘가");
+// }
+
+if (1 == 3) {
+  console.log("맞아요");
+} else if (1 < 3) {
+  console.log("맞아요1");
+}
+
+document.getElementById("send").addEventListener("click", function (e) {
+  if (document.getElementById("email").value == "") {
+    e.preventDefault();
+    alert("아이디를 입력하세요");
+  }
+  if (document.getElementById("password").value == "") {
+    e.preventDefault();
+    alert("비밀번호를 입력하세요");
+  }
+  if (document.getElementById("password").value.length < 6) {
+    e.preventDefault();
+    alert("비밀번호 더 길게 입력하세요");
+  }
+});
