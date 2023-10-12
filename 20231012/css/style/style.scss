@@ -1,0 +1,114 @@
+@import url(/20231012/css/reset/reset.css);
+
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+ul.list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+button {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  float: left;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+.orange {
+  border-top: 2px solid orange;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid white;
+  border-left: 1px solid #ccc;
+  color: black;
+  margin-top: -2px;
+}
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+.active {
+  display: block;
+}
+
+// .buttonEffect {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+
+//   button {
+//     width: 150px;
+//     height: 48px;
+//     border-radius: 50px;
+//     border: 1px solid #dedede;
+//   }
+
+//   li + li {
+//     margin-left: 50px;
+//   }
+
+//   .active {
+//     background-color: orange;
+//   }
+// }
+
+// .tab_menu {
+//   position: relative;
+// }
+// .tab_menu .list {
+//   overflow: hidden;
+// }
+// .tab_menu .list li {
+//   float: left;
+//   margin-right: 14px;
+// }
+// .tab_menu .list .btn {
+//   font-size: 13px;
+// }
+// .tab_menu .list .cont {
+//   display: none;
+//   position: absolute;
+//   top: 25px;
+//   left: 0;
+//   background: #555;
+//   color: #fff;
+//   text-align: center;
+//   width: 250px;
+//   height: 100px;
+//   line-height: 100px;
+// }
+// .tab_menu .list li.is_on .btn {
+//   font-weight: bold;
+//   color: green;
+// }
+// .tab_menu .list li.is_on .cont {
+//   display: block;
+// }
+
+.img {
+  -webkit-animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    infinite;
+  animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(3);
+    transform: scaleX(3);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}

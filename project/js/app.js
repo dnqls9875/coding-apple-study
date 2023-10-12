@@ -70,6 +70,6 @@ const lightBtnHandler = function () {
 // 다크모드 버튼을 클릭하는 이벤트 모션
 document.querySelector(".bg-dark").addEventListener("click", lightBtnHandler);
 
-setTimeout(() => {
-  document.querySelector(".alert").style.display = "none";
-}, 5000);
+// setTimeout(() => {
+//   document.querySelector(".alert").style.display = "none";
+// }, 5000);
