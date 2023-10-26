@@ -68,3 +68,15 @@ let object4 = {
 };
 
 object4.fnc();
+
+const btnList = document.querySelectorAll(".button");
+
+const removeClass = (element, className) => element.classList.remove(className);
+const addClass = (element, className) => element.classList.add(className);
+
+const btnHandler = (e) => {
+  btnList.forEach((button) => removeClass(button, "active"));
+  addClass(e.currentTarget, "active");
+};
+
+btnList.forEach((element) => element.addEventListener("click", btnHandler));

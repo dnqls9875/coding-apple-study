@@ -51,11 +51,11 @@ document.getElementById("버튼").addEventListener("click", function () {
 const btnList = document.querySelectorAll(".button");
 
 const removeClass = (element, className) => element.classList.remove(className);
-const addClass = (element, classsName) => element.classList.add(classsName);
+const addClass = (element, className) => element.classList.add(className);
 
-const btnHandler = (event) => {
+const btnHandler = (e) => {
   btnList.forEach((button) => removeClass(button, "active"));
-  addClass(event.currentTarget, "active");
+  addClass(e.currentTarget, "active");
 };
 
 btnList.forEach((element) => element.addEventListener("click", btnHandler));
