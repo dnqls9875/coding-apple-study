@@ -10,7 +10,7 @@ const nextBtn = document.querySelector(".next-btn");
 
 //  슬라이드 이동 함수
 const moveSlide = function (idx) {
-  slideList[0].style.left = `${idx * -100 + "%"}`;
+  slideList.style.left = `${idx * -100}%`;
   currentIndex = idx;
 };
 
